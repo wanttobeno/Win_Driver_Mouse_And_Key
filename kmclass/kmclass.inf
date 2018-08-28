@@ -1,0 +1,32 @@
+﻿;
+; kmclass.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=
+ClassGuid={10D66EEB-6474-4D3B-BEF4-C438E891CDFE}
+Provider=zu
+DriverVer=0.1
+CatalogFile=kmclass.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+
+
+[Strings]
+ManufacturerName=""
+ClassName=""
+DiskName="kmclass Source Disk"

@@ -1,0 +1,412 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PreDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "PreDemo，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PREDEMO_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PreDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,277,119,36,14
+    PUSHBUTTON      "退出",IDCANCEL,277,159,36,14
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,7,7,269,172
+    CTEXT           "注册码:",IDC_STATIC,7,181,33,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,40,181,165,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "启动",IDC_BTN_START,277,39,36,14
+    PUSHBUTTON      "暂停",IDC_BTN_PAUSE,277,79,36,14
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "延时设置",IDC_STATIC,28,25,73,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,103,24,53,12,ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           "1",IDC_STATIC,15,25,10,11,SS_CENTERIMAGE
+    CTEXT           "2",IDC_STATIC,15,41,10,11,SS_CENTERIMAGE
+    LTEXT           "门派选择",IDC_STATIC,28,105,73,11,SS_CENTERIMAGE
+    CTEXT           "3",IDC_STATIC,15,57,10,11,SS_CENTERIMAGE
+    LTEXT           "携带宠物数量",IDC_STATIC,28,41,73,11,SS_CENTERIMAGE
+    CTEXT           "4",IDC_STATIC,15,73,10,11,SS_CENTERIMAGE
+    LTEXT           "抓完还剩多少红住店",IDC_STATIC,28,73,73,11,SS_CENTERIMAGE
+    CTEXT           "5",IDC_STATIC,15,89,10,11,SS_CENTERIMAGE
+    LTEXT           "抓完还剩多少蓝住店",IDC_STATIC,28,89,73,11,SS_CENTERIMAGE
+    CTEXT           "6",IDC_STATIC,15,105,10,11,SS_CENTERIMAGE
+    LTEXT           "宠店柜台数",IDC_STATIC,28,57,73,11,SS_CENTERIMAGE
+    CTEXT           "7",IDC_STATIC,15,121,10,11,SS_CENTERIMAGE
+    LTEXT           "报警方式",IDC_STATIC,28,121,44,11,SS_CENTERIMAGE
+    GROUPBOX        "快捷键设置",IDC_STATIC_GROUP1,171,26,127,104
+    LTEXT           "启动挂机",IDC_STATIC,187,43,35,12
+    LTEXT           "暂停挂机",IDC_STATIC,187,65,35,12
+    LTEXT           "退出程序",IDC_STATIC,187,87,35,12
+    CONTROL         "",IDC_HOTKEY1,"msctls_hotkey32",WS_BORDER | WS_TABSTOP,231,43,57,12
+    CONTROL         "",IDC_HOTKEY2,"msctls_hotkey32",WS_BORDER | WS_TABSTOP,231,65,57,12
+    CONTROL         "",IDC_HOTKEY3,"msctls_hotkey32",WS_BORDER | WS_TABSTOP,231,87,57,12
+    CONTROL         "",IDC_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,209,134,8,8
+    COMBOBOX        IDC_COMBO1,103,104,53,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,103,120,53,81,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,103,40,53,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,103,56,53,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "最小化到系统托盘",IDC_STATIC,220,134,65,11
+    PUSHBUTTON      "测试",IDC_BUTTON_TEST,72,120,28,14
+    LTEXT           "游戏截图",IDC_STATIC,187,109,35,12
+    CONTROL         "",IDC_HOTKEY4,"msctls_hotkey32",WS_BORDER | WS_TABSTOP,231,109,57,12
+    EDITTEXT        IDC_EDIT4,103,72,53,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT5,103,88,53,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "0",IDC_STATIC,15,30,15,8
+    LTEXT           "1",IDC_STATIC,15,44,15,8
+    LTEXT           "2",IDC_STATIC,15,58,15,8
+    LTEXT           "3",IDC_STATIC,15,72,15,8
+    LTEXT           "4",IDC_STATIC,15,86,15,8
+    LTEXT           "5",IDC_STATIC,15,100,15,8
+    LTEXT           "6",IDC_STATIC,15,114,15,8
+    LTEXT           "7",IDC_STATIC,15,128,15,8
+    LTEXT           "8",IDC_STATIC,15,142,15,8
+    LTEXT           "9",IDC_STATIC,15,156,15,8
+    CTEXT           "柜台宠物",IDC_STATIC,35,14,34,10
+    CTEXT           "价格",IDC_STATIC,85,14,30,10
+    EDITTEXT        IDC_EDIT1,82,26,35,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT2,82,40,35,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT3,82,54,35,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT4,82,68,35,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT5,82,82,35,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT6,82,96,35,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT7,82,110,35,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT8,82,124,35,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT9,82,138,35,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT10,82,152,35,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_COMBO1,26,26,53,153,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,26,40,53,153,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,26,53,53,153,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,26,67,53,153,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,26,81,53,153,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,26,95,53,153,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,26,109,53,153,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO8,26,123,53,153,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO9,26,137,53,153,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO10,26,151,53,153,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "商会主管",IDC_STATIC,31,35,32,10,SS_CENTERIMAGE
+    CTEXT           "酒店",IDC_STATIC,31,51,32,10,SS_CENTERIMAGE
+    CTEXT           "大雁塔",IDC_STATIC,31,67,32,10,SS_CENTERIMAGE
+    CTEXT           "大唐国境",IDC_STATIC,31,83,32,10,SS_CENTERIMAGE
+    CTEXT           "江南野外",IDC_STATIC,31,99,32,10,SS_CENTERIMAGE
+    CTEXT           "包裹位置",IDC_STATIC,67,23,34,9,SS_CENTERIMAGE
+    GROUPBOX        "长安城",IDC_STATIC_GROUP1,19,15,130,144
+    CTEXT           "书店",IDC_STATIC,31,115,32,10,SS_CENTERIMAGE
+    CTEXT           "花果山",IDC_STATIC,174,43,32,10,SS_CENTERIMAGE
+    CTEXT           "东海湾",IDC_STATIC,174,60,32,10,SS_CENTERIMAGE
+    CTEXT           "包裹位置",IDC_STATIC,208,27,34,9,SS_CENTERIMAGE
+    GROUPBOX        "傲来国",IDC_STATIC_GROUP2,167,15,132,61
+    CTEXT           "长寿郊外",IDC_STATIC,174,105,32,10,SS_CENTERIMAGE
+    GROUPBOX        "长寿村",IDC_STATIC_GROUP3,167,83,132,41
+    CTEXT           "大唐境外",IDC_STATIC,174,145,32,10,SS_CENTERIMAGE
+    GROUPBOX        "朱紫国",IDC_STATIC_GROUP4,167,131,132,33
+    CTEXT           "驿站",IDC_STATIC,31,131,32,10,SS_CENTERIMAGE
+    CTEXT           "坐标点",IDC_STATIC,111,23,26,10,SS_CENTERIMAGE
+    CTEXT           "[326,   14]",IDC_STATIC,106,35,35,10,SS_CENTERIMAGE
+    CTEXT           "[462, 165]",IDC_STATIC,106,51,35,10,SS_CENTERIMAGE
+    CTEXT           "[473, 246]",IDC_STATIC,106,67,35,10,SS_CENTERIMAGE
+    CTEXT           "[    5,     4]",IDC_STATIC,106,83,35,10,SS_CENTERIMAGE
+    CTEXT           "[537,     3]",IDC_STATIC,106,99,35,10,SS_CENTERIMAGE
+    CTEXT           "[519,   72]",IDC_STATIC,106,115,35,10,SS_CENTERIMAGE
+    CTEXT           "[280,    45]",IDC_STATIC,106,131,35,10,SS_CENTERIMAGE
+    CTEXT           "坐标点",IDC_STATIC,251,26,36,10,SS_CENTERIMAGE
+    CTEXT           "[216, 140]",IDC_STATIC,251,43,36,10,SS_CENTERIMAGE
+    CTEXT           "[166,   14]",IDC_STATIC,251,60,36,10,SS_CENTERIMAGE
+    CTEXT           "[144,    4]",IDC_STATIC,251,105,36,10,SS_CENTERIMAGE
+    CTEXT           "[    6,     3]",IDC_STATIC,251,146,36,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO1,67,33,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,67,49,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,67,64,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,67,80,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,67,96,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,67,112,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,67,128,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO8,211,41,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO9,211,58,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO10,211,103,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO11,211,144,32,105,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "自动买摄妖香数量",IDC_STATIC,17,28,67,10
+    EDITTEXT        IDC_EDIT1,89,28,43,9,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "自动买洞冥草数量",IDC_STATIC,17,46,67,10
+    EDITTEXT        IDC_EDIT2,89,45,43,9,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "自动买蓝药数量",IDC_STATIC,17,64,67,10
+    LTEXT           "自动买蓝药种类",IDC_STATIC,153,68,60,10
+    EDITTEXT        IDC_EDIT3,89,62,43,9,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "场景抓怪回合限制",IDC_STATIC,17,81,67,10
+    EDITTEXT        IDC_EDIT4,89,81,43,9,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "是否自动卖体",IDC_STATIC,153,89,60,10
+    LTEXT           "柜台补满处理",IDC_STATIC,153,110,60,10
+    LTEXT           "遇宝宝处理",IDC_STATIC,153,131,60,10
+    COMBOBOX        IDC_COMBO1,217,66,67,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,217,87,67,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,217,108,67,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,217,129,67,102,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "AsSoft"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PreDemo.exe"
+            VALUE "LegalCopyright", "AsSoft: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "PreDemo.exe"
+            VALUE "ProductName", "PreDemo"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PREDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "托盘菜单"
+    BEGIN
+        MENUITEM "关于本程序",                       IDM_ABOUTBOX
+        MENUITEM "显示",                          IDM_SHOW
+        MENUITEM "退出",                          IDM_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PreDemo(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\PreDemo.rc2""  // ? Microsoft Visual C++ ?????\r\n"
+    "#include ""l.CHS\\afxres.rc""      // ????\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PreDemo.ico"
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\PreDemo.rc2"  // ? Microsoft Visual C++ ?????
+#include "l.CHS\afxres.rc"      // ????
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
